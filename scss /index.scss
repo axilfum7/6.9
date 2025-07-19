@@ -1,0 +1,17 @@
+@import "variables";
+@import "mixin";
+@import "global";
+
+
+
+// section
+@import "header";
+@import "hero";
+@import "natural";
+@import "about";
+@import "product";
+
+
+body{
+    min-height: 500vh;//vaqtincha
+}
