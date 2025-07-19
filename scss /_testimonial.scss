@@ -1,0 +1,136 @@
+.testimonial {
+  background: url('/assets/Image.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .subtitle {
+    color: #68a47f;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    color: #274c5b;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 700px;
+    margin: auto;
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+    }
+
+    .stars {
+      margin-bottom: 16px;
+
+      img {
+        width: 20px;
+        margin: 0 2px;
+      }
+    }
+
+    .message {
+      color: #525c60;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .role {
+      color: #525c60;
+      font-size: 14px;
+    }
+
+    .dots {
+      margin-top: 20px;
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        background: #c4c4c4;
+        margin: 0 4px;
+        transition: 0.3s;
+
+        &.active {
+          background: #68a47f;
+        }
+      }
+    }
+  }
+
+  &__stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+
+    .stat {
+      width: 150px;
+      height: 150px;
+      border: 2px solid #68a47f;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      h3 {
+        font-size: 28px;
+        color: #274c5b;
+        margin: 0;
+      }
+
+      p {
+        font-size: 14px;
+        color: #525c60;
+        margin: 0;
+      }
+
+      &:hover {
+        background: #68a47f;
+
+        h3,
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
